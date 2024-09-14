@@ -1,0 +1,96 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEAE5"
+    android:columnCount="2"
+    android:rowCount="3"
+    android:padding="16dp"
+    tools:context=".HomepageActivity">
+
+
+    <com.example.liberphile.SquareButton
+        android:id="@+id/button_view_books"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="View Books"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="8dp" />
+
+    <com.example.liberphile.SquareButton
+        android:id="@+id/button_add_book"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="Add Book"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="8dp" />
+
+    <com.example.liberphile.SquareButton
+        android:id="@+id/button_view_reviews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="View Reviews"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="8dp" />
+
+    <com.example.liberphile.SquareButton
+        android:id="@+id/button_my_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="My Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="8dp" />
+
+    <com.example.liberphile.SquareButton
+        android:id="@+id/button_readers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="Readers"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="8dp" />
+
+    <com.example.liberphile.SquareButton
+        android:id="@+id/button_babel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="Babel"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="8dp" />
+
+</GridLayout>

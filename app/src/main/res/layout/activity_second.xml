@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollIndicators="right"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:background="#EDEAE5"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A0522D"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="22dp"
+            tools:ignore="ExtraText">
+
+
+            <ImageView
+                android:id="@+id/imgProfile1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img" />
+
+
+
+            <TextView
+                android:id="@+id/styled_text_view_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Maryl John"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:background="#EDEAE5"
+            >
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_10"
+                android:background="@drawable/circle"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/styled_text_view_2"
+                android:layout_width="214dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+
+                android:text="Books Read"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="#EDEAE5"
+            tools:ignore="ExtraText">
+            >
+
+
+            <ImageView
+                android:id="@+id/imgProfile7"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_7"
+                android:layout_margin="16dp"
+                android:scaleType="centerCrop"
+                />
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/start_third_activity_button"
+                    android:layout_width="214dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="16dp"
+                    android:text="Laws of Human Nature"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#EDEAE5">
+
+
+            <ImageView
+                android:id="@+id/imgProfile8"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_6"
+                android:layout_margin="16dp"
+                android:scaleType="centerCrop" />
+
+
+            <TextView
+                android:id="@+id/styled_text_view_5"
+                android:layout_width="214dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="16dp"
+                android:text="Can't hurt me"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="#EDEAE5">
+            >
+
+            <ImageView
+                android:id="@+id/imgProfile9"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_9"
+                android:layout_margin="16dp"
+                android:scaleType="centerCrop"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/styled_text_view_3"
+                android:layout_width="214dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="16dp"
+                android:text="danish"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#EDEAE5">
+            >
+
+            <ImageView
+                android:id="@+id/imgProfile10"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_9"
+                android:layout_margin="16dp"
+                android:scaleType="centerCrop"
+                />
+
+
+            <TextView
+                android:id="@+id/styled_text_view_44"
+                android:layout_width="214dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="16dp"
+                android:text="danish"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
