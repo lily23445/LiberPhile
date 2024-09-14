@@ -82,9 +82,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Book Title"
-            android:textColor="#5C4033"
+            android:minHeight="48dp"
             android:padding="8dp"
-            />
+            android:textColor="#5C4033" />
 
         <ImageButton
             android:id="@+id/selectToBeReadBookImage"

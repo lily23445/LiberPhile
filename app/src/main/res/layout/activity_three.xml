@@ -40,8 +40,7 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="200dp"
-                android:layout_marginLeft="0dp
-"
+                android:layout_marginLeft="0dp"
                 android:src="@drawable/img_7">
 
             </ImageView>

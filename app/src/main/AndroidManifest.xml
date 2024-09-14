@@ -12,14 +12,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Reader"
+        android:theme="@style/Theme.LiberPhile"
         tools:targetApi="31">
 
 
 
         <!-- Set Homepage_Activity as the launcher activity -->
         <activity
-            android:name=".HomepageActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +28,8 @@
         </activity>
 
         <!-- Declare other activities -->
+        <activity android:name=".HomepageActivity" android:exported="false" />
+        <activity android:name=".SignUpActivity" android:exported="false" />
         <activity android:name=".BabelActivity" android:exported="false" />
         <activity android:name=".ReadersActivity" android:exported="false" />
         <activity android:name=".SecondActivity" android:exported="false" />
