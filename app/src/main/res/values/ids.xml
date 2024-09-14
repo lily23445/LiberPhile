@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <item name="button_view_reviews" type="id" />
+    <item name="button_add_books" type="id" />
     <item name="button_readers" type="id" />
     <item name="button_my_profile" type="id" />
     <item name="button_babel" type="id" />
-    <item name="button_add_book" type="id" />
+    <item name="button_shelf" type="id" />
     <item name="button_view_books" type="id" />
 </resources>

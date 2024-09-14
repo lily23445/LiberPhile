@@ -5,7 +5,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -22,7 +21,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.io.IOException;
 
-public class AddBookActivity extends AppCompatActivity {
+public class ShelfActivity extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1;
     private Bitmap selectedImageBitmap;
@@ -36,7 +35,7 @@ public class AddBookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_book);
+        setContentView(R.layout.activity_shelf);
 
 
         if (getSupportActionBar() != null) {
@@ -76,9 +75,9 @@ public class AddBookActivity extends AppCompatActivity {
                 selectReadBookImage.setImageResource(android.R.drawable.ic_menu_gallery);
                 readBooksCount++;
             } else if (readBooksCount >= 3) {
-                Toast.makeText(AddBookActivity.this, "You can only add up to 3 books in this section", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ShelfActivity.this, "You can only add up to 3 books in this section", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(AddBookActivity.this, "Please enter a book title and select an image", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ShelfActivity.this, "Please enter a book title and select an image", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -93,9 +92,9 @@ public class AddBookActivity extends AppCompatActivity {
                 selectToReadBookImage.setImageResource(android.R.drawable.ic_menu_gallery);
                 toReadBooksCount++;
             } else if (toReadBooksCount >= 3) {
-                Toast.makeText(AddBookActivity.this, "You can only add up to 3 books in this section", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ShelfActivity.this, "You can only add up to 3 books in this section", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(AddBookActivity.this, "Please enter a book title and select an image", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ShelfActivity.this, "Please enter a book title and select an image", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -110,9 +109,9 @@ public class AddBookActivity extends AppCompatActivity {
                 selectFavBookImage.setImageResource(android.R.drawable.ic_menu_gallery);
                 favBooksCount++;
             } else if (favBooksCount >= 3) {
-                Toast.makeText(AddBookActivity.this, "You can only add up to 3 books in this section", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ShelfActivity.this, "You can only add up to 3 books in this section", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(AddBookActivity.this, "Please enter a book title and select an image", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ShelfActivity.this, "Please enter a book title and select an image", Toast.LENGTH_SHORT).show();
             }
         });
     }

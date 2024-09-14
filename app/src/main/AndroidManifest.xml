@@ -15,9 +15,7 @@
         android:theme="@style/Theme.LiberPhile"
         tools:targetApi="31">
 
-
-
-        <!-- Set Homepage_Activity as the launcher activity -->
+        <!-- Set LoginActivity as the launcher activity -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -34,10 +32,9 @@
         <activity android:name=".ReadersActivity" android:exported="false" />
         <activity android:name=".SecondActivity" android:exported="false" />
         <activity android:name=".ThirdActivity" android:exported="false" />
-        <activity android:name=".ViewBooksActivity" android:exported="false" />
-        <activity android:name=".AddBookActivity" android:exported="false" />
+        <activity android:name=".AddBooksActivity" android:exported="false" />
+        <activity android:name=".ShelfActivity" android:exported="false" />
         <activity android:name=".ViewReviewsActivity" android:exported="false" />
-        <activity android:name=".ViewFriendsActivity" android:exported="false" />
         <activity android:name=".ProfileActivity" android:exported="false" />
 
     </application>

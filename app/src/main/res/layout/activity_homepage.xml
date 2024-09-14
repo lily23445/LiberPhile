@@ -10,28 +10,28 @@
 
 
     <com.example.liberphile.SquareButton
-        android:id="@+id/button_view_books"
+        android:id="@+id/button_add_books"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_row="0"
         android:layout_column="0"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="View Books"
+        android:text="Add Books"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:gravity="center"
         android:layout_margin="8dp" />
 
     <com.example.liberphile.SquareButton
-        android:id="@+id/button_add_book"
+        android:id="@+id/button_shelf"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_row="0"
         android:layout_column="1"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="Add Book"
+        android:text="Shelf"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:gravity="center"
