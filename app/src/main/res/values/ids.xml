@@ -7,4 +7,18 @@
     <item name="button_babel" type="id" />
     <item name="button_shelf" type="id" />
     <item name="button_view_books" type="id" />
+    <item name="button_review" type="id" />
+    <item name="bookTitleEditText" type="id" />
+    <item name="bookImageView" type="id" />
+    <item name="addPhotoButton" type="id" />
+    <item name="submitReviewButton" type="id" />
+    <item name="reviewInputLayout" type="id" />
+    <item name="confirmationLayout" type="id" />
+    <item name="editReviewButton" type="id" />
+    <item name="submittedBookTitle" type="id" />
+    <item name="ratingEditText" type="id" />
+    <item name="reviewEditText" type="id" />
+    <item name="submittedRating" type="id" />
+    <item name="submittedReview" type="id" />
+
 </resources>

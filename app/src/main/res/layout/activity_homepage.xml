@@ -38,14 +38,14 @@
         android:layout_margin="8dp" />
 
     <com.example.liberphile.SquareButton
-        android:id="@+id/button_view_reviews"
+        android:id="@+id/button_review"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_row="1"
         android:layout_column="0"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:text="View Reviews"
+        android:text=" Reviews"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:gravity="center"

@@ -51,4 +51,7 @@ public class SignUpActivity extends AppCompatActivity {
     public EditText getEditTextUsername() {
         return editTextUsername;
     }
+
+    public static class LoginRequest {
+    }
 }

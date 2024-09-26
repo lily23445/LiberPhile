@@ -13,52 +13,42 @@ public class HomepageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
-        // Ensure this matches the layout file name
 
+        // Set the title for the Action Bar if it's not null
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Liberphile");
         }
-        // Corrected button IDs
-        findViewById(R.id.button_add_books).setOnClickListener(this::openViewBooks);
+
+        // Set onClickListeners for buttons
+        findViewById(R.id.button_add_books).setOnClickListener(this::openAddBooks);
         findViewById(R.id.button_shelf).setOnClickListener(this::openShelf);
-        findViewById(R.id.button_view_reviews).setOnClickListener(this::openViewReviews);
+         findViewById(R.id.button_review).setOnClickListener(this::openReview);
         findViewById(R.id.button_my_profile).setOnClickListener(this::openProfile);
         findViewById(R.id.button_readers).setOnClickListener(this::openReaders);
         findViewById(R.id.button_babel).setOnClickListener(this::openBabel);
     }
 
     public void openBabel(View view) {
-        Intent intent = new Intent(this, BabelActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(this, BabelActivity.class));
     }
 
-    public void openViewBooks(View view) {
-        Intent intent = new Intent(this, AddBooksActivity.class);
-        startActivity(intent);
+    public void openAddBooks(View view) {
+        startActivity(new Intent(this, AddBooksActivity.class));
     }
 
     public void openShelf(View view) {
-        Intent intent = new Intent(this, ShelfActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(this, ShelfActivity.class));
     }
 
-    public void openViewReviews(View view) {
-        Intent intent = new Intent(this, ViewReviewsActivity.class);
-        startActivity(intent);
-    }
+   public void openReview(View view) {
+        startActivity(new Intent(this, ReviewActivity.class));
+   }
 
     public void openProfile(View view) {
-        Intent intent = new Intent(this, ProfileActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(this, ProfileActivity.class));
     }
 
     public void openReaders(View view) {
-        Intent intent = new Intent(this, ReadersActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(this, ReadersActivity.class));
     }
-
-
-
 }
-
-
