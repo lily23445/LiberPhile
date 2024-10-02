@@ -1,32 +1,155 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
-    <!--  Title  -->
-    <TextView android:id="@+id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADD YOUR BOOK" android:textSize="24sp" android:textStyle="bold" android:layout_centerHorizontal="true" android:layout_marginTop="16dp"/>
-    <!--  Image View for Book Photo  -->
-    <ImageView android:id="@+id/bookImageView" android:layout_width="150dp" android:layout_height="200dp" android:layout_below="@id/titleTextView" android:layout_centerHorizontal="true" android:layout_marginTop="16dp" android:background="#DDDDDD" android:contentDescription="Book Photo"/>
-    <!--  Add a Photo Button  -->
-    <Button android:id="@+id/addPhotoButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/bookImageView" android:layout_centerHorizontal="true" android:layout_marginTop="8dp" android:text="ADD A PHOTO"/>
-    <Button android:id="@+id/submitReviewButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/reviewEditText" android:layout_centerHorizontal="true" android:layout_marginTop="16dp" android:text="SUBMIT REVIEW"/>
-    <!--  Input Field for Book Title  -->
-    <EditText android:id="@+id/bookTitleEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/addPhotoButton" android:layout_marginTop="16dp" android:hint="Add a Book Title" android:padding="8dp"/>
-    <!--  Input Field for Rating  -->
-    <EditText android:id="@+id/ratingEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/bookTitleEditText" android:layout_marginTop="8dp" android:hint="Rate (1-5)" android:padding="8dp" android:inputType="number"/>
-    <!--  Input Field for Review  -->
-    <EditText android:id="@+id/reviewEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ratingEditText" android:layout_marginTop="8dp" android:hint="Write Your Review" android:padding="8dp" android:minLines="3"/>
-    <!--  Bottom Navigation Bar  -->
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:orientation="horizontal" android:gravity="center" android:weightSum="4">
-        <!--  Navigation Buttons  -->
-        <Button android:layout_width="18dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="HOME PAGE"/>
-        <Button android:layout_width="20dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="BABBLE"/>
-        <Button android:layout_width="37dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="LIBRARY"/>
-        <Button android:layout_width="25dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="READERS"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#EDEAE5">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="-ˋˏ ADD YOUR BOOK ˎˊ-"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Image View for Book Photo -->
+    <ImageView
+        android:id="@+id/bookImageView"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#DDDDDD"
+        android:contentDescription="Book Photo" />
+
+    <!-- Add a Photo Button -->
+    <Button
+        android:id="@+id/addPhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="ADD A PHOTO"
+        android:backgroundTint="#514C49"/>
+
+    <!-- Input Field for Book Title -->
+    <EditText
+        android:id="@+id/bookTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addPhotoButton"
+        android:layout_marginTop="16dp"
+        android:hint="Add a Book Title"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColor="@color/black"/>
+
+    <!-- Input Field for Rating -->
+    <EditText
+        android:id="@+id/ratingEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookTitleEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Rate (1-5)"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColor="@color/black"/>
+
+    <!-- Input Field for Review -->
+    <EditText
+        android:id="@+id/reviewEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Write Your Review"
+        android:padding="8dp"
+        android:minLines="3"
+        android:textColor="@color/black"/>
+
+    <!-- Submit Review Button -->
+    <Button
+        android:id="@+id/submitReviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reviewEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="SUBMIT REVIEW"
+        android:backgroundTint="#514C49"/>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="4">
+        <!-- Navigation Buttons can be added here -->
     </LinearLayout>
-    <!--  Confirmation Layout (Initially Hidden)  -->
-    <RelativeLayout android:id="@+id/confirmationLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:visibility="gone">
-        <!--  This line makes the layout hidden initially  -->
-        <ImageView android:id="@+id/submittedBookCover" android:layout_width="100dp" android:layout_height="150dp" android:layout_marginTop="16dp" android:layout_centerHorizontal="true" android:contentDescription="Submitted Book Cover"/>
-        <TextView android:id="@+id/submittedBookTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Book cover submitted" android:textSize="18sp" android:layout_below="@id/submittedBookCover" android:layout_centerHorizontal="true" android:layout_marginTop="8dp"/>
-        <TextView android:id="@+id/submittedRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your rating" android:textSize="18sp" android:layout_below="@id/submittedBookTitle" android:layout_centerHorizontal="true" android:layout_marginTop="8dp"/>
-        <TextView android:id="@+id/submittedReview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your review" android:textSize="18sp" android:layout_below="@id/submittedRating" android:layout_centerHorizontal="true" android:layout_marginTop="8dp"/>
-        <Button android:id="@+id/editReviewButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Edit it" android:layout_below="@id/submittedReview" android:layout_centerHorizontal="true" android:layout_marginTop="20dp"/>
+
+    <!-- Confirmation Layout (Initially Hidden) -->
+    <RelativeLayout
+        android:id="@+id/confirmationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/submittedBookCover"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="Submitted Book Cover" />
+
+        <TextView
+            android:id="@+id/submittedBookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book cover submitted"
+            android:textSize="18sp"
+            android:layout_below="@id/submittedBookCover"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/submittedRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your rating"
+            android:textSize="18sp"
+            android:layout_below="@id/submittedBookTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/submittedReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your review"
+            android:textSize="18sp"
+            android:layout_below="@id/submittedRating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/editReviewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit it"
+            android:layout_below="@id/submittedReview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
     </RelativeLayout>
+
 </RelativeLayout>

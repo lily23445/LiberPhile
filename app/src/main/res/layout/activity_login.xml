@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="#EDEAE5">
 
     <EditText
         android:id="@+id/editTextUsername"
@@ -14,7 +15,8 @@
         android:layout_marginBottom="16dp"
         android:hint="Username"
         android:inputType="text"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -23,14 +25,16 @@
         android:layout_marginBottom="16dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Log In"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#514C49"/>
 
     <TextView
         android:id="@+id/textViewSignUp"
@@ -40,6 +44,6 @@
         android:focusable="true"
         android:minHeight="48dp"
         android:text="Don't have an account? Sign Up"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="#514C49"
         android:textSize="16sp" />
 </LinearLayout>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <item name="button_add_books" type="id" />
+    <item name="button_recents" type="id" />
     <item name="button_readers" type="id" />
     <item name="button_my_profile" type="id" />
     <item name="button_babel" type="id" />
@@ -20,5 +20,20 @@
     <item name="reviewEditText" type="id" />
     <item name="submittedRating" type="id" />
     <item name="submittedReview" type="id" />
+    <item name="username_input" type="id" />
+    <item name="bio_input" type="id" />
+    <item name="change_picture_button" type="id" />
+    <item name="cancel_button" type="id" />
+    <item name="favorite_genres_input" type="id" />
+    <item name="save_button" type="id" />
+    <item name="profile_picture" type="id"/>
+    <item name="username" type="id"/>
+    <item name="bio" type="id"/>
+    <item name="favorite_genre" type="id"/>
+    <item name="joined_date" type="id"/>
+    <item name="edit_project_button" type="id"/>
+    <item name="bookTitle" type="id"/>
+    <item name="titleTextView" type="id" />
+    <item name="submittedBookCover" type="id" />
 
 </resources>

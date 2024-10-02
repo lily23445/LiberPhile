@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:scrollIndicators="right"
     android:scrollbarStyle="insideOverlay"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+    android:background="#EDEAE5">
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -23,8 +24,10 @@
             android:layout_height="wrap_content"
             android:iconifiedByDefault="false"
             android:padding="8dp"
-            android:queryHint="Search readers"
-            tools:ignore="DuplicateIds" />
+            android:queryHint="-ˋˏ search readers ˎˊ-"
+            tools:ignore="DuplicateIds"
+            android:textColor="@color/black"/>
+
 
 
         <TextView
@@ -35,7 +38,8 @@
             android:textStyle="bold"
             android:text="Friends: 12 "
             android:layout_marginBottom="15dp"
-            android:layout_marginTop="6dp"/>
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black"/>
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -68,7 +72,8 @@
                 android:layout_marginStart="16dp"
                 android:text="Maryl John"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
@@ -95,7 +100,8 @@
                 android:layout_marginStart="16dp"
                 android:text="Thomas Edward"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -120,7 +126,8 @@
                 android:layout_marginStart="16dp"
                 android:text="Roberto Firmino"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -146,7 +153,8 @@
                 android:layout_marginStart="16dp"
                 android:text="Sadio mane"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -172,7 +180,8 @@
                 android:layout_marginStart="16dp"
                 android:text="Chris Williamson"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -198,7 +207,8 @@
                 android:layout_marginStart="16dp"
                 android:text="Maryl Jhez"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
 

@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText editTextPassword;
     private Button buttonLogin;
     private TextView textViewSignUp;
-    private String BASE_URL = "http://192.168.0.104:3000";
+    private String BASE_URL = "http://192.168.0.103:3000";
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -104,7 +104,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
                         RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
-                        String url = "http://192.168.0.104:3000/signup/"+username+"/"+email+"/"+password;
+                        String url = "http://192.168.0.103:3000/signup/"+username+"/"+email+"/"+password;
 
 
                         StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
@@ -132,7 +132,7 @@ public class LoginActivity extends AppCompatActivity {
                             @Override
                             public void onErrorResponse(VolleyError error) {
                                 loading.dismiss();
-                                Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "Invalid Credentials"+ error, Toast.LENGTH_SHORT).show();
                             }
                         }){
                             @Nullable
@@ -146,7 +146,7 @@ public class LoginActivity extends AppCompatActivity {
                                 return params;
                             }
                         };
-//                        queue.add(request);
+                        queue.add(request);
 
                 }
                 });
@@ -189,7 +189,7 @@ public class LoginActivity extends AppCompatActivity {
         data.put("Username", username);
         data.put("Password", password);
         RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
-        String url = "http://192.168.0.104:3000/login/"+username+"/"+password;
+        String url = "http://192.168.0.103:3000/login/"+username+"/"+password;
 
 
         StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
@@ -231,7 +231,12 @@ public class LoginActivity extends AppCompatActivity {
                 return params;
             }
         };
-//        queue.add(request);
+        queue.add(request);
     }
-}
 
+
+
+    // For GET DATA
+
+
+}

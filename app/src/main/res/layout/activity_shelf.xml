@@ -2,153 +2,133 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDEAE5">
+    android:background="#EDEAE5" >
 
-    <!-- Outer LinearLayout to hold all sections vertically -->
     <LinearLayout
+        android:id="@+id/shelfContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp" >
 
-        <!-- Header: SECTIONS -->
         <TextView
             android:id="@+id/sectionHeader"
-            android:layout_width="match_parent"
+            android:layout_width="381dp"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:paddingBottom="16dp"
-            android:text="SECTIONS"
-            android:textAlignment="center"
+            android:text="-ˋˏ SHELF ˎˊ-"
             android:textColor="#514C49"
-            android:textSize="24sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
-        <!-- Section: Read Books -->
-        <TextView
-            android:id="@+id/readBooksTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="Read Books"
-            android:textColor="#7E6D63"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <!-- Input fields for adding a book -->
-        <EditText
-            android:id="@+id/addReadBooksTitle"
+        <!-- Read Books Shelf -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Book Title"
-            android:minHeight="48dp"
-            android:padding="8dp"
-            android:textColor="#5C4033" />
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
 
-        <ImageButton
-            android:id="@+id/selectReadBooksImage"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Read"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#514C49"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/addReadBookButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:backgroundTint="#514C49"
+                android:text="Add Book" />
+
+            <LinearLayout
+                android:id="@+id/readBooksList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <!-- To Be Read Books Shelf -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_gallery"
-            android:contentDescription="Select Book Cover" />
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="To Be Read"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#514C49" />
+
+            <Button
+                android:id="@+id/addToReadBookButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Book"
+                android:backgroundTint="#514C49" />
+
+            <LinearLayout
+                android:id="@+id/toReadBooksList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <!-- Favorite Books Shelf -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Favorite Books"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#514C49" />
+
+            <Button
+                android:id="@+id/addFavBookButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Book"
+                android:backgroundTint="#514C49" />
+
+            <LinearLayout
+                android:id="@+id/favBooksList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <!-- Add custom shelf section -->
+        <EditText
+            android:id="@+id/addShelfTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter shelf name"
+            android:minHeight="48dp" />
 
         <Button
-            android:id="@+id/addReadBooksButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/createShelfButton"
+            android:layout_width="378dp"
             android:layout_height="wrap_content"
-            android:text="Add Book"
-            android:textColor="#F5F5F5"
-            android:backgroundTint="#5C4033"/>
-
-        <!-- List of Read Books -->
-        <LinearLayout
-            android:id="@+id/readBooksList"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-
-        <!-- Section: To Be Read Books -->
-        <TextView
-            android:id="@+id/toReadBooksTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="To Be Read Books"
-            android:textColor="#7E6D63"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-        <!-- Input fields for adding a book -->
-        <EditText
-            android:id="@+id/addToBeReadBookTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Book Title"
-            android:minHeight="48dp"
-            android:padding="8dp"
-            android:textColor="#5C4033" />
-
-        <ImageButton
-            android:id="@+id/selectToBeReadBookImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_gallery"
-            android:contentDescription="Select Book Cover" />
-
-        <Button
-            android:id="@+id/addToBeReadBookButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add Book"
-            android:textColor="#F5F5F5"
-            android:backgroundTint="#5C4033"/>
-
-        <!-- List of To Be Read Books -->
-        <LinearLayout
-            android:id="@+id/toReadBooksList"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-
-        <!-- Section: Favorite Books -->
-        <TextView
-            android:id="@+id/favBooksTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="Favorite Books"
-            android:textColor="#7E6D63"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-        <!-- Input fields for adding a book -->
-        <EditText
-            android:id="@+id/addFavBookTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Book Title"
-            android:minHeight="48dp"
-            android:padding="8dp"
-            android:textColor="#5C4033" />
-
-        <ImageButton
-            android:id="@+id/selectFavBookImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_gallery"
-            android:contentDescription="Select Book Cover" />
-
-        <Button
-            android:id="@+id/addFavBookButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add Book"
-            android:textColor="#F5F5F5"
-            android:backgroundTint="#5C4033"/>
-
-        <!-- List of Favorite Books -->
-        <LinearLayout
-            android:id="@+id/favBooksList"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-
+            android:text="Create Shelf"
+            android:backgroundTint="#514C49" />
     </LinearLayout>
+
 </ScrollView>

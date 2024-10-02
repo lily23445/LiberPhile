@@ -4,103 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollIndicators="right"
-    android:scrollbarStyle="insideOverlay"
-    android:scrollbars="vertical">
+    android:background="#FFFFFF"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:textColor="@color/black"
-        android:background="@color/white"
-        >
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <!-- Title -->
+        <TextView
+            android:id="@+id/bookTitle"
             android:layout_width="match_parent"
-            android:layout_height="100dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_margin="@dimen/activity_vertical_margin"
-                android:textSize="20dp"
-                android:text="law of humans"
-                android:textStyle="bold"
-                android:textColor="@color/black">
+            android:layout_height="wrap_content"
+            android:text="-ˋˏ LAW OF HUMAN NATURE ˎˊ-"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"/>
 
-            </TextView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <!-- Book Cover Image -->
+        <ImageView
+            android:id="@+id/bookImage"
+            android:layout_width="150dp"
             android:layout_height="200dp"
-            android:background="#EDEAE5">
+            android:layout_gravity="center"
+            android:src="@drawable/img_7"
+            android:contentDescription="Book Cover"/>
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="0dp"
-                android:src="@drawable/img_7">
-
-            </ImageView>
+        <!-- Rating Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            tools:ignore="ExtraText">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:text="Rate: "
-                android:textColor="@color/black"
-                android:textSize="28dp"
-                android:textStyle="bold">
-
-            </TextView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:paddingBottom="10dp"
-                android:src="@drawable/img_12">
-
-            </ImageView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:text="Review:"
-                android:textSize="20dp"
-                android:textStyle="bold" >
-
-            </TextView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:text="Matt Haig's The Midnight Library is a thought-provoking and emotionally resonant novel that explores the infinite possibilities of life choices and their consequences. The story centers around Nora Seed, a woman who finds herself in a magical library between life and death, where each book represents a different path her life could have taken.
-
-As Nora navigates through these alternate realities, the novel beautifully captures the essence of regret, hope, and self-discovery. Haig’s writing is both lyrical and poignant, offering readers a deep dive into the human condition and the concept of what if. The concept of a library as a place to explore different life choices is both imaginative and relatable, making it a compelling read for anyone who has ever pondered the paths not taken.
-
-The characters are well-developed, with Nora's journey providing a powerful commentary on the impact of our choices and the importance of embracing one's own life. The novel's message about finding meaning and happiness in the present moment is both uplifting and transformative.
-
-Overall, The Midnight Library is a beautifully crafted story that offers both escapism and introspection. Haig’s ability to blend fantasy with real-world issues makes this a memorable and impactful read. It’s a book that will resonate with readers long after they’ve turned the final page."
-                android:textSize="12sp"
+                android:text="RATING "
+                android:textSize="20sp"
                 android:textStyle="bold"
-                >
+                android:textColor="#333333"/>
 
-            </TextView>
+            <TextView
+                android:id="@+id/ratingNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FF9800"/>
         </LinearLayout>
 
+        <!-- Review Title -->
+        <TextView
+            android:id="@+id/reviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-ˋˏ REVIEW ˎˊ-"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="#333333"/>
 
+        <!-- Review Content -->
+        <TextView
+            android:id="@+id/reviewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matt Haig's The Midnight Library is a thought-provoking and emotionally resonant novel that explores the infinite possibilities of life choices and their consequences..."
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginTop="8dp"/>
 
+        <!-- Edit Review Button -->
     </LinearLayout>
-
 </ScrollView>

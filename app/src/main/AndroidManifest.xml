@@ -38,10 +38,11 @@
         <activity android:name=".ReadersActivity" android:exported="false" />
         <activity android:name=".SecondActivity" android:exported="false" />
         <activity android:name=".ThirdActivity" android:exported="false" />
-        <activity android:name=".AddBooksActivity" android:exported="false" />
+        <activity android:name=".RecentsActivity" android:exported="false" />
         <activity android:name=".ShelfActivity" android:exported="false" />
         <activity android:name=".ReviewActivity" android:exported="false" />
         <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".EditProfileActivity" android:exported="false" />
 
     </application>
 

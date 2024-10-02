@@ -13,7 +13,7 @@ public class ReadersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Liberphile");
+            getSupportActionBar().setTitle("Readers");
         }
         // Set the content view to the correct layout file
         setContentView(R.layout.activity_readers); // Make sure this is the correct layout file name

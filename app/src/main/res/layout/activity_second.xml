@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:scrollIndicators="right"
     android:scrollbarStyle="insideOverlay"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+    android:background="#EDEAE5">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,42 +20,77 @@
 
 
         <LinearLayout
-            android:id="@+id/ll"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#A0522D"
-            android:clickable="true"
-            android:focusable="true"
-            android:orientation="horizontal"
-            android:padding="22dp"
-            tools:ignore="ExtraText">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#EDEAE5"
+            android:textColor="@color/black">
 
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A0522D"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="22dp">
 
-            <ImageView
-                android:id="@+id/imgProfile1"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@drawable/circle"
-                android:clipToOutline="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/img" />
+                <ImageView
+                    android:id="@+id/imgProfile1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img" />
 
+                <TextView
+                    android:id="@+id/styled_text_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:text="Maryl John"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/styled_text_view_1"
+                android:id="@+id/bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginBottom="10dp"
-                android:text="Maryl John"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:paddingBottom="8dp" />
+                android:text="Bio: Avid reader and book lover."
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black" />
 
+            <TextView
+                android:id="@+id/favorite_genres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorite Genres: Fiction, Mystery, Science Fiction"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black" />
 
+            <TextView
+                android:id="@+id/joined_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joined: January 1, 2023"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black" />
 
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -118,7 +154,8 @@
                     android:layout_marginStart="16dp"
                     android:text="Laws of Human Nature"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
 
             </RelativeLayout>
 
@@ -147,7 +184,8 @@
                 android:text="Can't hurt me"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                tools:ignore="DuplicateIds" />
+                tools:ignore="DuplicateIds"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
@@ -162,7 +200,7 @@
                 android:id="@+id/imgProfile9"
                 android:layout_width="100dp"
                 android:layout_height="150dp"
-                android:src="@drawable/img_9"
+                android:src="@drawable/prideandprejudice"
                 android:layout_margin="16dp"
                 android:scaleType="centerCrop"
                 tools:ignore="DuplicateIds" />
@@ -172,9 +210,10 @@
                 android:layout_width="214dp"
                 android:layout_height="77dp"
                 android:layout_marginStart="16dp"
-                android:text="danish"
+                android:text="Pride and Prejudice"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
         <LinearLayout
@@ -188,7 +227,7 @@
                 android:id="@+id/imgProfile10"
                 android:layout_width="100dp"
                 android:layout_height="150dp"
-                android:src="@drawable/img_9"
+                android:src="@drawable/img_1984"
                 android:layout_margin="16dp"
                 android:scaleType="centerCrop"
                 />
@@ -199,9 +238,10 @@
                 android:layout_width="214dp"
                 android:layout_height="77dp"
                 android:layout_marginStart="16dp"
-                android:text="danish"
+                android:text="1984"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 

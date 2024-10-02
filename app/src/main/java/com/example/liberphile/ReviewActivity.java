@@ -26,11 +26,15 @@ public class ReviewActivity extends AppCompatActivity {
     private ImageView bookImageView;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_review);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Review");
+        }
         // Initialize views
         bookTitleEditText = findViewById(R.id.bookTitleEditText);
         ratingEditText = findViewById(R.id.ratingEditText);
